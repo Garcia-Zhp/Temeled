@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Owl Med - Activity Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/86ebf5f67f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/icon_styles.css">
+    <link rel="stylesheet" href="/css/main_layout.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel='shortcut icon' type='image/x-icon' href='/images/owlmed.ico'/>
+
+</head>
+<body onload="setDashboard()">
+<section id="top">
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+            <div id="navleft">
+                <i class="logo fas fa-laptop-medical" onclick="location.href='activityMenu.html'"></i>
+                <a class="navbar-brand" onclick="location.href='activityMenu.html'">Owl Med</a>
+            </div>
+
+
+            <div id="navright">
+                <button class="btn btn-md sign-btn" type="button" onclick="logOut()">Sign Out</button>
+            </div>
+        </div>
+
+    </nav>
+</section>
+
+<div class="wrapper">
+    <nav class="sidebar-container">
+        <div class="sidebar-header">
+
+            <h3 id="helloNameElement"></h3>
+            <p id="select-activity">Select an Activity:</p>
+        </div>
+        <div class="sidebar-buttons">
+            <hr class="sidebar-grey-hr">
+            <button disabled onclick="location.href='activityMenu.html'" type="button" class="btn sidebar-button"><i
+                    class="far fa-hospital"></i>Home
+            </button>
+            <hr class="sidebar-grey-hr">
+            <button id="reportsButton" type="button" class="btn sidebar-button"><i class="fas fa-file-medical-alt"></i>Reports
+            </button>
+            <hr class="sidebar-grey-hr">
+            <button onclick="location.href='videos.html'" type="button" class="btn sidebar-button"><i
+                    class="fas fa-film"></i>Videos
+            </button>
+            <hr class="sidebar-grey-hr">
+            <button onclick="location.href='sched_appt.html'" type="button" class="btn sidebar-button"><i
+                    class="far fa-calendar-alt"></i>Appointments
+            </button>
+            <hr class="sidebar-grey-hr">
+            <button onclick="location.href='messaging.html'" type="button" class="btn sidebar-button"><i
+                    class="far fa-envelope"></i>Messages
+            </button>
+            <hr class="sidebar-grey-hr">
+            <button onclick="location.href='patient_account.html'" type="button" class="btn sidebar-button"><i
+                    class="far fa-user-circle"></i>Account
+            </button>
+            <hr class="sidebar-grey-hr">
+            <div style="padding:1em;">
+                <button onclick="location.href='hipaa.html'" type="button" class="hippa1 hippa">View Our HIPAA Statement
+            </button>
+        </div>
+        </div>
+    </nav>
+
+    <div id=content>
+        <!--Write your code here-->
+        <div id="main-header">
+            <p>Dashboard</p>
+        </div>
+        
+
+        <div id="spinner">
+            <br>
+            <br>
+            <div style="" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border" role="status" style="width: 10rem; height: 10rem;">
+                </div>
+            </div>
+        </div>
+
+        <div id="feedbox" style="display: none;">
+            <br>
+            <div id="dash-date" style="display: none;">
+                <label for="date">Choose a date for viewing appointments:</label>
+                <input style="width:30%" type="date" name="date-start"  id="date">
+            </div>
+            <h1 class="visits-header" id="upcoming-header">Upcoming Appointments</h1>
+            <div id="future-visits">
+            </div>
+            <hr>
+
+
+            <h1 class="visits-header" id="past-header">Past Appointments</h1>
+            <div id="past-visits">
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+    </div>
+</div>
+
+<script src="../javascript/dashboard.js" type="text/javascript"></script>
+<script src="../javascript/sendData.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+</body>
+</html>

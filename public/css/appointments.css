@@ -1,0 +1,104 @@
+:root {
+    --yellow: #FDBB30;
+    --yellowlight: #ffdb91;
+    --black: #000000;
+    --white: #ffffff;
+    --grey: #e5e5e5;
+    --greydark: #585858;
+    --box-shadow-posX: 5px 0px 15px -5px var(--greydark);
+    --box-shadow-negY: 0px 5px 15px -5px var(--greydark);
+    --font1: Arial, Helvetiva, sans-serif;
+}
+body{
+    font-family: var(--font1);
+}
+#form-container{
+    display: flex;
+    align-items: center;
+
+}
+#appointment-box h1{
+    margin: 15px 0;
+    padding: 0;
+}
+.form-group{
+    flex: 1;
+
+    margin: auto 20px;
+}
+.calendar{
+    flex: 1;
+    margin: auto 20px;
+}
+#appointment-box{
+    padding: 30px;
+}
+.time-slots-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 0 20px 30px 20px;
+    justify-content: center;
+}
+
+.time-slot{
+    width: 150px;
+    margin: 15px;
+    box-shadow: var(--box-shadow-negY);
+    background-color: var(--yellow);
+    transition: 0.3s;
+}
+
+.time-slot:hover{
+    background-color: var(--greydark);
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.comments{
+    margin: 5px auto;
+    width: 60%;
+}
+.reason{
+    margin: auto;
+    width: 60%;
+}
+
+#appointment-box .btn{
+    background-color: var(--yellow);
+    margin: auto;
+    transition: 0.3s;
+}
+
+#appointment-box .btn:hover{
+    background-color: var(--greydark);
+    color: var(--yellow);
+    cursor: pointer;
+
+}
+
+/* Calendar */
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+/* custom styles */
+
+label {
+  display: block;
+}
+#date{
+  height: 50px;
+  font-size: 2rem;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+
+}

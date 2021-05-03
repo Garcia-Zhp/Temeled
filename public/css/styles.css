@@ -1,0 +1,414 @@
+/*
+Note: The main colors we will use are declared in the root as shown below.
+        These variables are declared for maintaining consistency
+ */
+:root {
+    --yellow: #febc11;
+    --black: #000000;
+    --white: #ffffff;
+    --grey: #e5e5e5;
+    --greydark: #585858;
+    --box-shadow-posX: 5px 0px 15px -5px var(--greydark);
+    --box-shadow-negY: 0px 5px 15px -5px var(--greydark);
+    --font1: Arial, Helvetiva, sans-serif;
+}
+body{
+    font-family: var(--font1);
+}
+h1 {
+    color: #000000;
+
+    font-size: 45px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    
+}
+
+/* Form Format */
+.registerForm {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.registerForm label {
+    color: #707070;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+/* Samir: */
+h2 {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.bottomrow {
+    margin-top: 50px;
+}
+
+.bt-lg {
+    border: 1px solid #707070;
+    background-color: #575757;
+    color: white;
+    width: 250px;
+    height: 150px;
+    font-size: 20px;
+}
+
+.report-btn{
+    border: 2px solid black;
+    background-color: var(--yellow);
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    font-weight: bold;
+    box-shadow: var(--box-shadow-negY);
+}
+.report-btn:hover{
+    background-color: var(--greydark);
+    color: var(--yellow);
+    cursor: pointer;
+}
+.text-center{
+    display: flex;
+    justify-content: center;
+}
+#spacedColumn {
+    width: 32px;
+    height: 10px;
+    padding: 1px 80px 50px;
+}
+
+body {
+    min-width: 300px;
+}
+
+
+/*Jaime Garcia*/
+
+
+/*Devin Kabzinski*/
+.vid {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Miguel Villanueva */
+/* Login Page */
+.interface {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+
+.image-container {
+    width: 50%;
+    float: left;
+    padding-right: 10%;
+}
+
+#title {
+    font-size: 65px;
+}
+
+.login-container {
+    width: 50%;
+    float: right;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: var(--grey);
+}
+
+.login-container input[type="text"] {
+    width: 55%;
+    padding-left: 10px;
+    margin-top: 15%;
+    margin-left: 25%;
+    font-size: 18px;
+}
+
+.login-container input[type="password"] {
+    width: 55%;
+    padding-left: 10px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    font-size: 18px;
+}
+
+.login-button {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.login-button input[type="button"] {
+    background-color: mediumseagreen;
+    color: var(--white);
+    border: 1px solid var(--greydark);
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 2px 25px 2px;
+    font-size: 20px;
+}
+
+.register-btn {
+    margin-top: 5%;
+    background-color: steelblue;
+    color: var(--white);
+    border: 1px solid var(--greydark);
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 2px 25px 2px;
+    font-size: 22px;
+}
+
+/* New Account Page */
+.registration {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.registration label {
+    width: 100%;
+    font-size: 18px;
+    padding-left: 10%;
+    margin-top: 10px;
+}
+
+.registration input[type="text"], input[type="password"] {
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 10%;
+    padding-left: 20px;
+}
+
+.genders-dropdown {
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 10%;
+}
+
+.genders-dropdown .select{
+    width: 100%;
+}
+
+.genders-dropdown .select select{
+    width: 100%;
+    padding-left: 20px;
+}
+
+.genders-dropdown .select option {
+    padding-left: 20px;
+}
+
+.registration input[type="date"] {
+    width: 80%;
+    border: solid;
+    border-width: 0.5px;
+    margin-top: 5px;
+    margin-left: 10%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.registration input[type="number"] {
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 10%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.register-button {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 100px;
+}
+
+/* Patient Account Page */
+.personal-info {
+    float: left;
+    margin: 20px 20px;
+    width: 47%;
+}
+
+.changeEmail, .changePassword {
+    float: right;
+    width: 47%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.active, .collapsible:hover {
+    background-color: var(--grey);
+}
+
+.collapsible {
+    width: 100%;
+    background-color: white;
+    border-style: none none solid none;
+    border-color: black;
+    font-size: 27px;
+    text-align: left;
+}
+
+.content {
+    padding-top: 6px;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-bottom: 0px;
+    /*max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;*/
+}
+
+.personal-info label{
+    margin-left: 18px;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 25%;
+    padding-left: 10px;
+    border-left: solid;
+}
+
+.personal-info input[type="text"], input[type="date"], input[type="number"] {
+    width: 65%;
+    margin-right: 18px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.acctGenders-dropdown {
+    width: 65%;
+    margin-top: 10px;
+    margin-right: 18px;
+}
+
+.acctGenders-dropdown .acctGenders-select {
+    width: 65%;
+}
+
+.acctGenders-dropdown .acctGenders-select select {
+    width: 65%;
+    padding-left: 20px;
+}
+
+.update-button {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.static input[type="text"], input[type="date"] {
+    border: none;
+}
+
+.changeEmail label {
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 25%;
+    padding-left: 10px;
+    border-left: solid;
+}
+
+.changeEmail input[type="text"] {
+    margin-top: 10px;
+    width: 65%;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.static-email input[type="text"] {
+    border: none;
+}
+
+.changePassword label {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 30%;
+    padding-left: 10px;
+    border-left: solid;
+}
+
+.changePassword input[type="password"] {
+    width: 57%;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-left: 20px;
+}
+
+/*Layton Williams*/
+.selection-page-header {
+    color: var(--black);
+}
+.container{
+    width: 90%;
+}
+
+/*Gabrielle*/
+.formcontainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+#appointments {
+    width: 100%;
+}
+
+.registerbox {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.appointmentsubmit {
+  /*  background-color: #febc11; */
+  border: 4px;
+  border-color:#000000;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  text-align: center;
+}
+.appointmentsubmit:hover{
+    background-color: #febc11; 
+  color: white;
+}
+/* error messages */
+#errorbox {
+    color: #FF0000;
+    margin-top: 5px;
+}
+
+#errorText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #FF0000;
+}
+
+

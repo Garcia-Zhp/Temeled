@@ -1,0 +1,258 @@
+:root {
+    --yellow: #FDBB30;
+    --yellowlight: #ffdb91;
+    --black: #000000;
+    --white: #ffffff;
+    --grey: #e5e5e5;
+    --greydark: #585858;
+    --box-shadow-posX: 5px 0px 15px -5px var(--greydark);
+    --box-shadow-negY: 0px 5px 15px -5px var(--greydark);
+    --font1: Arial, Helvetiva, sans-serif;
+}
+body{
+    font-family: var(--font1);
+}
+
+#content-messaging {
+    flex: 6;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#chat-box {
+    background-color: var(--white);
+    padding-top: 20px;
+    border: 1px solid #707070;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 80%;
+}
+
+#send-box {
+    height: 20%;
+
+}
+
+#send-msg-btn {
+    height: 100%;
+    margin: 0;
+    border-top: 0;
+    border-bottom: 1px solid #707070;
+    border-left: 1px solid #707070;
+    border-right: 1px solid #707070;
+    padding: 0;
+    flex: 1;
+    background-color: var(--yellow);
+}
+
+#send-msg-btn:hover {
+    cursor: pointer;
+    background-color: #707070;
+}
+
+#msg-field {
+    display: flex;
+    height: 100%;
+}
+
+#input-msg {
+
+    margin: 0;
+    padding-left: 10px;
+    flex: 3;
+    border-top: 0;
+    border-bottom: 1px solid #707070;
+    border-left: 1px solid #707070;
+    border-right: 0;
+    background-color: #dfdede;
+}
+
+.msg-row {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 5px;
+    display: inline-flex;
+}
+
+.you {
+    color: var(--greydark);
+    font-size: small;
+    float: right;
+    padding-right: 27px;
+}
+
+.my-msg-box {
+    height: fit-content;
+    width: fit-content;
+    padding: 8px 15px;
+    color: var(--black);
+    background: var(--yellow);
+    border-radius: 5px;
+    border: 1px solid var(--black);
+    margin-left: auto;
+    margin-right: 20px;
+    right: 0;
+    max-width: 60%;
+}
+
+.their-name {
+    color: var(--greydark);
+    padding-left: 27px;
+    font-size: small;
+
+}
+
+.their-msg-box {
+    height: fit-content;
+    width: fit-content;
+    padding: 8px 15px;
+    color: var(--black);
+    background: var(--grey);
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: auto;
+    right: 0;
+    max-width: 60%;
+}
+
+.messenger {
+    display: flex;
+    flex: 1;
+    height: 76.9vh;
+
+}
+
+#box1 {
+
+    flex-wrap: wrap;
+    width: 30%;
+    max-width: 30%;
+    background-color: var(--greydark);
+
+}
+
+#box2 {
+    background-color: var(--grey);
+
+    flex-wrap: wrap;
+    width: 70%;
+    max-width: 70%;
+}
+
+
+.all-chats {
+    border: 1px solid black;
+    height: 20%;
+    padding-top: 20px;
+    text-align: center;
+    background-color: var(--grey);
+    display: flex;
+
+}
+.all-chats h3{
+    font-size: 3rem;
+    font-weight: 300;
+
+}
+
+.chats1 {
+    flex: 2;
+
+}
+
+.chats2 {
+    flex: 1;
+
+}
+
+.chats3 {
+    flex: 1;
+
+}
+
+.msg-list-content {
+    border: 1px solid black;
+    background-color: white;
+    padding: 6px 30px;
+    transition: 0.3s;
+}
+
+.msg-list-content:hover {
+    background-color: var(--greydark);
+    color: var(--grey);
+    cursor: pointer;
+    box-shadow: 0 1px 15px var(--black);
+    z-index: 2210;
+}
+
+#msg-list {
+    background-color: var(--greydark);
+    height: 85%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#contact-list{
+    background-color: var(--greydark);
+    height: 80%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+.contact-list-content {
+    border: 1px solid black;
+    background-color: white;
+    height: 100px;
+    padding: 6px 30px;
+    transition: 0.3s;
+}
+
+.contact-list-content:hover {
+    background-color: var(--greydark);
+    color: var(--yellow);
+    cursor: pointer;
+    box-shadow: 0 1px 15px var(--black);
+    z-index: 2210;
+}
+.contact-box{
+    padding-top: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.fa-address-book {
+    line-height: 100%;
+    padding-top: 4px;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.fa-comment-alt {
+    line-height: 20px;
+    padding-top: 4px;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.contact-btn {
+    border: 0;
+    transition: 0.3s;
+}
+
+.new-msg-btn {
+    border: 0;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    border: 0;
+    color: var(--yellow);
+
+}
+
+.new-msg-btn:hover {
+    border: 0;
+    color: var(--yellow);
+}

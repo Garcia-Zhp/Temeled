@@ -1,0 +1,104 @@
+:root {
+    --yellow: #fdbb30;
+    --yellowlight: #ffdb91;
+    --black: #000000;
+    --white: #ffffff;
+    --grey: #e5e5e5;
+    --greydark: #585858;
+    --box-shadow-posX: 5px 0px 15px -5px var(--greydark);
+    --box-shadow-negY: 0px 5px 15px -5px var(--greydark);
+    --font1: Arial, Helvetiva, sans-serif;
+}
+body{
+    font-family: var(--font1);
+}
+#feedbox hr{
+    width: 90%;
+    margin: 30px auto;
+    height: 2px;
+    background-color: #000000;
+    border: none;
+
+}
+#future-visits{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-header{
+    background-color: var(--yellowlight);
+}
+.appointment-card:hover{
+    background-color: #030303;
+    cursor: pointer;
+    box-shadow: var(--box-shadow-negY);
+}
+#past-visits{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.visits-header{
+
+}
+.appointment{
+    margin: 10px;
+}
+/*gabby css*/
+.hippa1{
+    background-color:black; 
+  border: 1px solid var(--grey);
+  color:white;
+  text-decoration-color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+.hippa:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid #555555;
+    text-align: center;
+    align-content: center;
+    
+  }
+  /*end of gabby css*/
+
+
+/* Calendar */
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+/* custom styles */
+
+label {
+  display: block;
+  margin-right: 10px;
+}
+
+#date{
+  height:50px;
+  font-size: 2rem;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+
+}
+#dash-date{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}

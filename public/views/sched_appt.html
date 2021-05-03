@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Owl Med - Scheduled Appointments</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/icon_styles.css">
+    <link rel="stylesheet" href="/css/main_layout.css">
+    <link rel="stylesheet" href="/css/sched_appt.css">
+    <script src="https://kit.fontawesome.com/86ebf5f67f.js" crossorigin="anonymous"></script>
+
+    <link rel='shortcut icon' type='image/x-icon' href='/images/owlmed.ico'/>
+</head>
+
+<body onload="setScheduledAppts()">
+<section id="top">
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+            <div id="navleft">
+                <i class="logo fas fa-laptop-medical" onclick="location.href='activityMenu.html'"></i>
+                <a class="navbar-brand" onclick="location.href='activityMenu.html'">Owl Med</a>
+            </div>
+
+
+            <div id="navright">
+                <button class="btn btn-md sign-btn" type="button" onclick="logOut()">Sign Out</button>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<div class="wrapper">
+    <nav class="sidebar-container">
+        <div class="sidebar-header">
+
+            <h3 id="helloNameElement"></h3>
+            <p id="select-activity">Select an Activity:</p>
+        </div>
+        <div class="sidebar-buttons">
+            <hr class="sidebar-grey-hr">
+            <button onclick="location.href='activityMenu.html'" type="button" class="btn sidebar-button"><i
+                    class="far fa-hospital"></i>Home
+            </button>
+            <hr class="sidebar-grey-hr">
+            <button id="reportsButton" type="button" class="btn sidebar-button"><i class="fas fa-file-medical-alt"></i>Reports
+            </button>
+            <hr class="sidebar-grey-hr">
+            <button onclick="location.href='videos.html'" type="button" class="btn sidebar-button"><i
+                    class="fas fa-film"></i>Videos
+            </button>
+            <hr class="sidebar-grey-hr">
+            <button disabled onclick="location.href='sched_appt.html'" type="button" class="btn sidebar-button"><i
+                    class="far fa-calendar-alt"></i>Appointments
+            </button>
+            <hr class="sidebar-grey-hr">
+            <button onclick="location.href='messaging.html'" type="button" class="btn sidebar-button"><i
+                    class="far fa-envelope"></i>Messages
+            </button>
+            <hr class="sidebar-grey-hr">
+            <button onclick="location.href='patient_account.html'" type="button" class="btn sidebar-button"><i
+                    class="far fa-user-circle"></i>Account
+            </button>
+            <hr class="sidebar-grey-hr">
+        </div>
+    </nav>
+
+    <div id="content">
+        <div id="main-header">
+            <p>Scheduled Appointments</p>
+        </div>
+        <div id="appointments">
+            <br><br>
+            <div id="provider-app-view">
+                <h3 class="text-center"> Choose a date for viewing appointments:</h3>
+                <div id="dash-date">
+                    <label for="date"></label>
+                    <input style="width:22%" type="date" name="date-start" id="date"><i onclick="dateLeft()"
+                                                                                        class="fas date-navi fa-chevron-left"></i><i
+                        onclick="dateRight()" class="fas date-navi fa-chevron-right"></i>
+                </div>
+                <div id="provider-appointment-table">
+
+                    <table class="table table-striped">
+                        <thead class="table-head-app">
+                        <tr>
+                            <th scope="col">Appointment ID</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Reason</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Accept?</th>
+                        </tr>
+                        </thead>
+                        <tbody id="table-body">
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div id="feedbox">
+
+                <div id="appointment-container"></div>
+            </div>
+            <!--added by Gabby-->
+            <br>
+            <div>
+                <center>
+                    <button onclick="document.location='calendarpage.html'" type="button" class="appointmentsubmit"
+                            id="sched-appt-submit">Request an appointment
+                    </button>
+                </center>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="../javascript/sendData.js" type="text/javascript"></script>
+<script src="../javascript/scheduledAppointments.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

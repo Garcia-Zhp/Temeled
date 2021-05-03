@@ -1,0 +1,103 @@
+:root {
+    --yellow: #fdbb30;
+    --yellowlight: #ffdb91;
+    --black: #000000;
+    --white: #ffffff;
+    --grey: #e5e5e5;
+    --greydark: #585858;
+    --box-shadow-posX: 5px 0px 15px -5px var(--greydark);
+    --box-shadow-negY: 0px 5px 15px -5px var(--greydark);
+}
+
+#upload-container{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: var(--grey);
+    box-shadow: var(--box-shadow-negY);
+    margin: 0 auto 30px;
+}
+#video-feed{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-card{
+    margin: 3px;
+    transition: 0.3s;
+    width: 18rem;
+}
+.video-card:hover{
+    background-color: #030303;
+    cursor: pointer;
+    box-shadow: var(--box-shadow-negY);
+}
+
+.card-header{
+    background-color: var(--yellowlight);
+}
+.upload-btn{
+    border: 1px solid black;
+    background-color: var(--yellow);
+    transition: 0.3s;
+    margin: 1rem;
+}
+.upload-btn:hover{
+    background-color: var(--greydark);
+    cursor: pointer;
+    color: var(--yellow);
+
+    box-shadow: var(--box-shadow-negY);
+}
+
+.back-btn{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: var(--yellow);
+    transition: 0.3s;
+}
+
+#del-vid-container{
+    display: flex;
+
+
+}
+.delete-vid{
+    margin: 3rem auto;
+    border: 1px solid black;
+    background-color: red;
+    box-shadow: var(--box-shadow-negY);
+    transition: 0.3s;
+}
+.delete-vid:hover{
+    background-color: #030303;
+    cursor: pointer;
+    box-shadow: var(--box-shadow-negY);
+
+}
+.fa-plus{
+    font-size: 2.5rem;
+}
+.upload-header{
+
+    font-size: 2.5rem;
+}
+.upload-header-container{
+    display: flex;
+    justify-content: center;
+}
+#form{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 1rem;
+
+}
+
+#avatar{
+    border-radius: 5px;
+}

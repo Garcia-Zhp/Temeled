@@ -1,0 +1,143 @@
+/*
+
+ This stylesheet includes all formatting for:
+  - nav bar
+  - sign out button
+  - side bar
+  - side bar buttons
+  - main content div (div to the right of the sidebar)
+
+
+ Note: The main colors we will use are declared in the root as shown below.
+ These variables are declared for consistency
+ */
+
+:root {
+    --yellow: #febc11;
+    --black: #000000;
+    --white: #ffffff;
+    --grey: #e5e5e5;
+    --greydark: #585858;
+    --box-shadow-posX: 5px 0px 15px -5px var(--greydark);
+    --box-shadow-negY: 0px 5px 15px -5px var(--greydark);
+
+    --font1: Arial, Helvetiva, sans-serif;
+}
+body{
+    font-family: var(--font1);
+}
+
+.navbar-brand {
+    font-size: 2rem;
+
+}
+
+.navbar-brand:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: var(--yellow);
+    padding: 10px 50px 10px;
+    height: 80px;
+}
+
+.sidebar-header h3 {
+    text-align: center;
+    color: white;
+    font-size: 2.3rem;
+    margin: 0;
+
+}
+#top{
+    box-shadow: var(--box-shadow-negY);
+    position: relative;
+    z-index: 10;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+
+}
+
+.sidebar-container {
+    z-index: 10;
+    background-color: var(--black);
+    flex: 1;
+    min-height: 91.7vh;
+    box-shadow: var(--box-shadow-posX);
+    padding-top: 25px;
+}
+
+.sidebar-buttons {
+    padding-top: 30px;
+}
+
+.sidebar-button {
+    text-align: justify;
+    width: 100%;
+    padding: 20px 20px 20px 25px;
+    background-color: transparent;
+
+    color: white;
+    font-size: 1.5rem;
+}
+
+.sidebar-grey-hr {
+    padding: 0;
+    border-top: 1px solid var(--grey);
+    margin: 0;
+}
+
+#helloNameElement {
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+#select-activity {
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+#content {
+    flex: 6;
+    height: 100%;
+
+}
+
+#main-header{
+    height: 15%;
+    background-color: var(--grey);
+    margin:0;
+    padding: 30px;
+    box-shadow: var(--box-shadow-negY);
+    color: #000000;
+    width: 100%;
+    font-family: Arial, Helvetiva, sans-serif;
+    font-size: 45px;
+    text-align: center;
+
+}
+
+#navcenter {
+    margin: auto;
+    padding-top: 30px;
+}
+
+.sign-btn {
+    background-color: var(--black);
+    color: var(--grey);
+    border: 1px solid var(--greydark);
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 2px 25px 2px;
+}
+
+.sign-btn:hover {
+    background-color: #313131;
+    color: #ffffff;
+    border: 1px solid #1d1d1d;
+    cursor: pointer;
+}
